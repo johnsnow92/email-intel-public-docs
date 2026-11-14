@@ -1,0 +1,39 @@
+---
+title: "Endpoint index"
+description: "Operations listed in the published API schema, with links to the upstream reference."
+---
+
+Source: [public OpenAPI schema](https://email-intel-api-production.up.railway.app/docs/openapi.json), retrieved 2026-11-13.
+
+| Method | Path | Summary |
+| --- | --- | --- |
+| `POST` | `/v1/verify` | Verify a single email address |
+| `POST` | `/v1/verify/batch` | Submit batch email verification |
+| `GET` | `/v1/verify/batch/{jobId}` | Check batch job status |
+| `GET` | `/v1/domain/{domain}` | Get full domain intelligence |
+| `GET` | `/v1/domain/{domain}/pattern` | Get email naming pattern |
+| `GET` | `/v1/domain/{domain}/compliance` | Check bulk sender compliance |
+| `GET` | `/v1/domain/{domain}/blacklist` | Check DNSBL blacklist status |
+| `GET` | `/v1/domain/{domain}/report` | Get comprehensive domain report |
+| `POST` | `/v1/domain/compare` | Compare multiple domains |
+| `GET` | `/v1/domain/{domain}/reputation` | Get sender reputation score |
+| `GET` | `/v1/domain/{domain}/reputation/history` | Get reputation score history |
+| `GET` | `/v1/domain/{domain}/advisor` | Get AI infrastructure recommendations |
+| `POST` | `/v1/predict/deliverability` | Predict inbox placement probability |
+| `GET` | `/v1/postmaster/{domain}` | Get combined postmaster data |
+| `POST` | `/v1/postmaster/connect/google` | Initiate Google Postmaster OAuth |
+| `GET` | `/v1/postmaster/connect/google/callback` | Google OAuth callback |
+| `POST` | `/v1/postmaster/connect/microsoft` | Connect Microsoft SNDS |
+| `DELETE` | `/v1/postmaster/disconnect/{provider}` | Disconnect postmaster provider |
+| `POST` | `/v1/postmaster/{domain}/sync` | Sync postmaster data |
+| `POST` | `/v1/find` | Find email address for a person |
+| `POST` | `/v1/analyze/content` | Analyze email content for spam risk |
+| `POST` | `/v1/predict/engagement` | Predict email engagement |
+| `POST` | `/v1/monitor/domains` | Register domains for monitoring |
+| `GET` | `/v1/monitor/domains` | List monitored domains |
+| `DELETE` | `/v1/monitor/domains/{domain}` | Unregister a domain from monitoring |
+| `GET` | `/v1/whoami` | API key identity |
+| `GET` | `/health` | Health check |
+| `POST` | `/v1/webhooks/hubspot` | HubSpot workflow webhook |
+
+[Open the interactive reference for parameter and response details](https://email-intel-api-production.up.railway.app/docs).

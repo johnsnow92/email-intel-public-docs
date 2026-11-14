@@ -1,0 +1,3 @@
+*.json.bak
+internal/
+*.log
